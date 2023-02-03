@@ -15,7 +15,7 @@ namespace LambdaExpressionDay_24
 
             List<Person> listOfPerson = new List<Person>();
             AddingPersonDetailsIntoList(listOfPerson);
-
+            PersonDataManagement.RetreiveTop2Records(listOfPerson);
             Console.ReadLine();
         }
         public static void AddingPersonDetailsIntoList(List<Person>list)
@@ -27,7 +27,7 @@ namespace LambdaExpressionDay_24
                 list.Add(new Person() { SSN = 5, Name = "Riyansh", Address = "Dombivli", Age = 63 });
                 list.Add(new Person() { SSN = 6, Name = "Shruti", Address = "Dhule", Age = 36 });
                 list.Add(new Person() { SSN = 1, Name = "Anvay", Address = "Raver", Age = 14 });
-                DisplayPersonDetails(list);
+                 DisplayPersonDetails(list);
         }
         public static void DisplayPersonDetails(IEnumerable<Person>list)
         {
